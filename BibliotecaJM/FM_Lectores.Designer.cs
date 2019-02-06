@@ -29,8 +29,43 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.dS_Lectores = new BibliotecaJM.DS_Lectores();
+            this.lectoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lectoresTableAdapter = new BibliotecaJM.DS_LectoresTableAdapters.lectoresTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Lectores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lectoresBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dS_Lectores
+            // 
+            this.dS_Lectores.DataSetName = "DS_Lectores";
+            this.dS_Lectores.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lectoresBindingSource
+            // 
+            this.lectoresBindingSource.DataMember = "lectores";
+            this.lectoresBindingSource.DataSource = this.dS_Lectores;
+            // 
+            // lectoresTableAdapter
+            // 
+            this.lectoresTableAdapter.ClearBeforeFill = true;
+            // 
+            // FM_Lectores
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(1010, 700);
+            this.Name = "FM_Lectores";
+            this.Load += new System.EventHandler(this.FM_Lectores_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Lectores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lectoresBindingSource)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private DS_Lectores dS_Lectores;
+        private System.Windows.Forms.BindingSource lectoresBindingSource;
+        private DS_LectoresTableAdapters.lectoresTableAdapter lectoresTableAdapter;
     }
 }
