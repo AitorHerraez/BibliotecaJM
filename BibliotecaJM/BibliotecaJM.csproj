@@ -86,6 +86,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Secciones.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_Usuarios.cs">
+      <DependentUpon>DS_Usuarios.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_Usuarios.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -127,6 +130,12 @@
     <Compile Include="FM_Listados.Designer.cs">
       <DependentUpon>FM_Listados.cs</DependentUpon>
     </Compile>
+    <Compile Include="FM_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Login.Designer.cs">
+      <DependentUpon>FM_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="FM_Modelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +159,9 @@
     <Compile Include="UsuarioActual.cs" />
     <EmbeddedResource Include="FM_Lectores.resx">
       <DependentUpon>FM_Lectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_Login.resx">
+      <DependentUpon>FM_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FM_Modelo.resx">
       <DependentUpon>FM_Modelo.cs</DependentUpon>
