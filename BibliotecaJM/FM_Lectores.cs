@@ -38,6 +38,9 @@ namespace BibliotecaJM
 
         }
 
-
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            this.lectoresTableAdapter.FillByNombreLector(this.dS_Lectores.lectores, tbNombre.Text);
+        }
     }
 }
